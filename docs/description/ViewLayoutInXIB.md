@@ -1,0 +1,1 @@
+Warns about views that are marked as ‘misplaced’ or ‘ambiguous’ in XIBs or storyboards that use autolayout. This rule relies on XIB annotations added by Xcode, which means that no diagnostics will be emitted for misplaced or ambiguous views that have not (yet) been annotated by Xcode.

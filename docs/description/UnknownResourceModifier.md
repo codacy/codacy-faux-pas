@@ -1,0 +1,1 @@
+Device type modifiers for device-specific resource files (like ~iphone or ~ipad), as well as the resolution modifier @2x, must be spelled correctly (and case sensitively, due to the case-sensitive filesystem on iOS devices).

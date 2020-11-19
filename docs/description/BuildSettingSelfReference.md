@@ -1,0 +1,1 @@
+Build settings should not refer to themselves. The $(inherited) keyword should be used to append something to an inherited value, and custom intermediary build setting keys should be used to compose values from multiple definitions in an .xcconfig file.

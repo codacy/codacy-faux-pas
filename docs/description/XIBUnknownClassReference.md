@@ -1,0 +1,1 @@
+Warns if an Interface Builder file refers to an unknown Objective-C class. This rule will warn about all references to classes that are not declared in the source code files that Faux Pas checks, or exported in linked libraries.

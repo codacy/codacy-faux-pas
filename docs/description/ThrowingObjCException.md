@@ -1,0 +1,1 @@
+Throwing exceptions in Objective-C is not very idiomatic, and should only be reserved for truly exceptional cases (if that,) and never for flow control. This rule can help you enforce a policy to never throw exceptions.

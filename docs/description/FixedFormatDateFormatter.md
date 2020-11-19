@@ -1,0 +1,1 @@
+Warns when an NSDateFormatter is used with fixed-format dates without using the invariant en_US_POSIX locale. If any other locale is used, the date format string may be overwritten, depending on system date and time settings. When working with user-visible dates, date and time styles should be used instead of setting a date format.

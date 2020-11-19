@@ -1,0 +1,1 @@
+It is recommended to avoid invoking setter methods on self in init methods, or in -[NSObject dealloc]. Doing so might trigger KVC notifications, which others might observe, and expect the object to be in a valid, consistent state.

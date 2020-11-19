@@ -1,0 +1,1 @@
+Warns if preprocessor definitions are defined explicitly using the -D argument instead of defining them in the GCC_PREPROCESSOR_DEFINITIONS (“Preprocessor macros”) build setting. Also warns if non-warning flags are defined in WARNING_CFLAGS (instead of OTHER_CFLAGS).

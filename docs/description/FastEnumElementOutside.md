@@ -1,0 +1,1 @@
+The element variable of a fast enumeration loop should not be used for anything other than holding the loop iteration element, so it follows that there is no reason for the variable to be visible outside the loop.

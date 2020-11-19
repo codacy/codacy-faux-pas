@@ -1,0 +1,1 @@
+Warns when literal strings are used to specify key paths. Something like NSStringFromSelector(@selector(foo)) is safer because it makes the compiler aware of the selector being specified — this helps find typos at compile time and allows automatic refactoring tools to make appropriate changes.

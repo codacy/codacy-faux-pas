@@ -1,0 +1,1 @@
+Warns if “retaining” semantics are specified in a @property declaration for a common immutable NSCopying class type that also has a mutable subclass variant (for example NSString). This rule helps avoid situations where the value of a property could change without the setter being invoked (i.e. the object gets mutated).

@@ -1,0 +1,1 @@
+Warns if the return value of -[NSNotificationCenter addObserverForName:object:queue:usingBlock:] is not stored anywhere. This method returns an opaque observer object that is needed in order to stop observing.

@@ -1,0 +1,1 @@
+It is recommended to choose an explicit value for the bundle identifier: an explicit, matching value must be chosen in iTunes Connect before publishing in the App Store (Xcode by default makes the bundle ID dependent on the PRODUCT_NAME variable).

@@ -1,0 +1,1 @@
+Writing to static variables (which is essentially global state) in instance methods is generally considered bad practice, because it easily leads to undesireable behavior when multiple instances are being manipulated. Warnings are suppressed for assignments occurring inside dispatch_once() blocks.

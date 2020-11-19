@@ -1,0 +1,1 @@
+IBOutlets are often private implementation details, and should thus be in a private class extension. This rule warns only about cases where the class is the “File’s Owner” of a XIB whose basename is the same as the class name, and that contains a connection to the outlet.

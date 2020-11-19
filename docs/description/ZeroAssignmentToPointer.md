@@ -1,0 +1,1 @@
+Assigning the literal zero to a pointer value might be an indication of a mistake where the programmer actually wanted to assign to an integer-typed member of the pointer type value. Assigning NULL, nil, or Nil instead suppresses warnings from this rule.
