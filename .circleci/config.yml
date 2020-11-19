@@ -1,0 +1,82 @@
+version: 2.1
+
+orbs:
+  codacy: codacy/base@2.9.3
+  codacy_plugins_test: codacy/plugins-test@0.10.6
+
+workflows:
+  version: 2
+  compile_test_deploy:
+    jobs:
+      - codacy/checkout_and_version:
+          write_sbt_version: true
+      - codacy/sbt:
+          name: populate_cache
+          persist_to_workspace: true
+          cmd: sbt ";set scalafmtUseIvy in ThisBuild := false;update"
+          requires:
+            - codacy/checkout_and_version
+      - codacy/sbt:
+          name: check_fmt
+          cmd: sbt scalafmt::test test:scalafmt::test sbt:scalafmt::test
+          requires:
+            - populate_cache
+      - codacy/sbt:
+          name: compile
+          persist_to_workspace: true
+          cmd: sbt compile
+          requires:
+            - populate_cache
+      - codacy/sbt:
+          name: test_and_coverage
+          cmd: |
+            sbt coverage test coverageReport
+            sbt coverageAggregate
+            bash <(curl -Ls https://coverage.codacy.com/get.sh) report --skip
+          requires:
+            - compile
+      - codacy/sbt:
+          name: package_artifacts
+          persist_to_workspace: true
+          cmd: |
+            sbt "graalvm-native-image:packageBin"
+            sbt "assembly"
+
+            mkdir -p ~/workdir/artifacts/
+            mv target/scala-2.13/codacy-faux-pas-assembly-$(cat .version).jar ~/workdir/artifacts/codacy-faux-pas-$(cat .version).jar
+            mv target/graalvm-native-image/codacy-faux-pas ~/workdir/artifacts/codacy-faux-pas-$(cat .version)
+          requires:
+            - check_fmt
+            - test_and_coverage
+      - codacy/shell:
+          name: docker_publish_local
+          cmd: |
+            docker build -t codacy-faux-pas .
+            docker save --output docker-image.tar $CIRCLE_PROJECT_REPONAME:latest
+          persist_to_workspace: true
+          requires:
+            - package_artifacts
+      - codacy_plugins_test/run:
+          name: plugins_test
+          run_pattern_tests: false
+          requires:
+            - docker_publish_local
+      - codacy/publish_docker:
+          name: publish_dockerhub
+          filters:
+            branches:
+              only:
+                - master
+          context: CodacyAWS
+          requires:
+            - plugins_test
+      - codacy/publish_ghr:
+          name: publish_ghr
+          path: ~/workdir/artifacts/
+          filters:
+            branches:
+              only:
+                - master
+          context: CodacyGitHub
+          requires:
+            - plugins_test

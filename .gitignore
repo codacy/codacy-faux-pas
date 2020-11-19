@@ -1,0 +1,6 @@
+target/
+.idea/
+.codacy-coverage/
+.metals
+.bloop/
+.vscode/
