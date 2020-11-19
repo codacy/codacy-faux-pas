@@ -1,0 +1,1 @@
+Warns about Objective-C methods to which no references are found. This rule will not warn about IBAction methods, initializer methods, or public methods (methods with a declaration in a header file, excluding header files named in the form *+Private.h). It also won’t warn about unused getter methods whose setter is used, and vice versa.

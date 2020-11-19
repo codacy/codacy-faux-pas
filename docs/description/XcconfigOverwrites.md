@@ -1,0 +1,1 @@
+Overwriting a previously set value in a build configuration file is often a sign of a mistake somewhere. It is recommended to set custom intermediary settings in “parent” configuration files and then compose final values for actual build settings in leaf configuration files.

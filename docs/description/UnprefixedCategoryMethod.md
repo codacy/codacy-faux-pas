@@ -1,0 +1,1 @@
+Category methods on system classes must be prefixed in order to avoid name collisions. By default, this rule considers a method name prefixed if it begins with at least three lowercase characters (or the lowercase version of the ‘Class Prefix’ configured for the project), followed by an underscore.

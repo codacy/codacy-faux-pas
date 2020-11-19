@@ -1,0 +1,1 @@
+Some APIs (that access e.g. contacts or calendars) require a usage description (“purpose string”) in the application metadata. This will be shown to the user when the system asks them to allow the application access to the related user data or system resource. This rule warns when some such APIs are used, but the associated usage description is missing.

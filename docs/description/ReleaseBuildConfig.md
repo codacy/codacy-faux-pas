@@ -1,0 +1,1 @@
+Warns when certain problematic build setting values are used for release builds. For example, if program flow instrumentation is enabled, the compiler optimization level is too low, or if the static analyzer is not run.

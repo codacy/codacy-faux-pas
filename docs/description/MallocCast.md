@@ -1,0 +1,1 @@
+In C, it is not recommended to explicitly cast the return value of malloc() (and other related memory allocation functions.) This rule does not warn about casts that occur in compilation units compiled in C++ (or Objective-C++) mode.

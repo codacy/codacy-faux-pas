@@ -1,0 +1,1 @@
+The sizeof operator should be used to obtain the correct size for any allocated structure or variable — the sizes of some data types vary between the 32-bit and 64-bit runtimes. This rule is naïve and may produce false positives in many cases.

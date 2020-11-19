@@ -1,0 +1,1 @@
+The classes of the UIKit framework generally do not support Key-Value Observing (KVO). If KVO does happen to work for some properties, it is undefined behavior and thus not guaranteed to work in future versions.

@@ -1,0 +1,1 @@
+You must invoke -[NSNotificationCenter removeObserver:] or -[NSNotificationCenter removeObserver:name:object:] before the observer object is deallocated. This rule only considers cases where the observer reference is self, or an instance variable or an Objective-C property in self. This only applies to iOS 8 (and earlier) and OS X 10.10 (and earlier).

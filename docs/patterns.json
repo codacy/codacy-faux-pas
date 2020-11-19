@@ -1,0 +1,782 @@
+{
+  "name" : "Faux-Pas",
+  "version" : "1.7.2",
+  "patterns" : [ {
+    "patternId" : "APIAvailability",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "AbsPathInBuildSetting",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "ArgumentModification",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "AssertionSideEffects",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "AssigningDelegate",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "AssociatedObjectOnValueType",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "BasicProjectSettings",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "BlockAPIRetainCycle",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "BuildSettingPlacement",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "BuildSettingSelfReference",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "BuildSettingsSetInGUI",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "CategoryMethodConflict",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "CompilerWarnings",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "CompleteNotificationCenterDetachment",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "ConstructorReturnType",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "CopyingMutableProperty",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "CyclomaticComplexity",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "DefaultInExhaustiveSwitch",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "DiscardedOpaqueNotificationObserver",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "DotSyntax",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "DuplicateResource",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "DuplicateTranslation",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "DylibInstallName",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "ErrorConditionCheck",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "FastEnumElementOutside",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "FileRefIgnoredInVCS",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "FileRefOutsideVCS",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "FileRefWithAbsPath",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "FixedFormatDateFormatter",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "GlobalAndLocalizedResource",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "HardcodedSelfClass",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "HardcodedUIString",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "IBOutletsInPublicInterface",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "IdentifierNaming",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "ImplicitAtomicProperty",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "ImplicitBundleId",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "InitializeMethodCategoryOverride",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "InitializeSuperInvocation",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "InstanceMethodWritesToStaticVariable",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "InvalidStringsFile",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "IsEqualAndHash",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "LiteralStringKeyPath",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "LoadMethodWithoutAutoreleasePool",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "MacroBasedIncludeGuard",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "MacroLiteral",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "MallocCast",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "MallocWithoutSizeof",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "MissingAPIUsageDescription",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "MissingDeviceTypeResource",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "MissingImageResolutionVariant",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "MissingNotificationCenterDetachment",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "MissingTranslation",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "NSLogUsed",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "NewInitializer",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "NonTypedefBlockDeclaration",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "NullCoalescingOp",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "OldVerboseObjCSyntax",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "OrderedComparisonOpDirection",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "OrderedPointerToZeroComparison",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "PrefixHeaderIncludeSuggestion",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "PrivateCategory",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "RecommendedVCSIgnores",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "RedundantInclude",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "ReleaseBuildCompilerArgs",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "ReleaseBuildConfig",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "ReservedIdentifierNaming",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "ReservedPrefix",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "RestrictedDirectMethodCall",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "RestrictedMethodOverride",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "RetainingImmutableProperty",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "RetinaImagesResolution",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "SetterInvocationInInitOrDealloc",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "SourceFileHeaderComment",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "Spelling",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "StringsFileEncoding",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "StringsdictWithoutStrings",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "StrongDelegate",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "StrongInsteadOfRetain",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "SuspiciousDateTimeFormat",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "SuspiciousMissingResources",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "SuspiciousResources",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "Swizzling",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "TerminatingApp",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "ThreadUnsafeInstanceCaching",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "ThrowingObjCException",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "TranslationFormatMismatch",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "TranslationPunctuation",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UIKitKVO",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UncommentedLocalizedString",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UndetachedDelegate",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UnidiomaticAccessorNaming",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UnknownResourceCodeReference",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UnknownResourceModifier",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UnknownResourceXIBReference",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UnnecessaryNibMethod",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UnnecessaryNullCheck",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UnprefixedCategoryMethod",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UnprefixedClass",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UnsupportedWeakReference",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UnusedErrorValue",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UnusedMethod",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UnusedResource",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UnusedTranslation",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "UsedVariableMarkedUnused",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "ViewControllerInitWithNibName",
+    "level" : "Info",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "ViewLayoutInXIB",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "WeakReferenceToTopLevelXIBObject",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "XIBRuntimeAttributeMismatch",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "XIBUnknownClassReference",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "XcconfigOverwrites",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "ZeroAssignmentToPointer",
+    "level" : "Info",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  } ]
+}

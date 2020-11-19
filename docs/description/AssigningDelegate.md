@@ -1,0 +1,1 @@
+Delegate properties should be declared weak instead of assign. Weak references are safer because they become nil when the referenced object is deallocated. This rule only applies to code compiled with Automatic Reference Counting (ARC).

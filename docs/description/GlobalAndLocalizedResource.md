@@ -1,0 +1,1 @@
+There should never be both a global and localized version of a given resource, because global resources take precedence over language-specific resources. If a global version of a resource exists, language-specific versions of the same resource are never returned by the platform APIs.

@@ -1,0 +1,1 @@
+Warns about errors in source file header comments (that are formatted using the default Xcode template), for example if the file name in the comment does not match the actual file name, or if the placeholder __MyCompanyName__ is present.

@@ -1,0 +1,1 @@
+Warns if an Objective-C class (or an instance of a class) sends a message to its own class object using a hardcoded reference to the class, e.g. [FOOThing alloc]. It is recommended to use self instead (e.g. [self alloc] or [[self class] alloc]) so that the concrete class would receive the message, and subclassing behavior would not be impeded.

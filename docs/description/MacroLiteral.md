@@ -1,0 +1,1 @@
+Instead of using a macro definition for a literal value that is used as a constant, define it as an actual constant. This makes the scope of the constant more explicit (it’s not available in all imported files until undefined) and it cannot be redefined or undefined in some later part of the code. Macro definitions are also not available in the debugger.

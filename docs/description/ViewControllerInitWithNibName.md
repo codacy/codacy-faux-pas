@@ -1,0 +1,1 @@
+It is not advisable to use -[UIViewController initWithNibName:bundle:] to instantiate UIViewController subclasses outside of the subclass implementation itself. This breaks encapsulation (the subclass should be the one to decide which NIB to use) and makes it more likely that a typo in the NIB name string will crash the app during runtime.

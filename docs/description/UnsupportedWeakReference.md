@@ -1,0 +1,1 @@
+In OS X, you cannot create weak references to instances of some classes (see the full list from Apple’s documentation.) The Clang compiler should warn about assignments of such objects to weak variables.

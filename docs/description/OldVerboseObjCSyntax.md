@@ -1,0 +1,1 @@
+Warns if Objective-C literals, boxed expressions and subscript notation are not used whenever possible. Note that Xcode can automatically fix your code to do this (see the Edit → Refactor → Convert To Modern Objective-C Syntax… menu item).

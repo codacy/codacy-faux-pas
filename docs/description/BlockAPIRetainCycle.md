@@ -1,0 +1,1 @@
+Warns if self is referenced in a block that is used in a context where it is known to cause a retain cycle. The Clang compiler’s -Warc-retain-cycles warning implements generic retain cycle detection — this rule only considers specific known system framework APIs that the compiler warning does not warn about.

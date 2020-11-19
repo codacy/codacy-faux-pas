@@ -1,0 +1,1 @@
+The +[NSObject initialize] method should not be overridden in categories, because this will prevent the original implementation from being executed. In many cases, +[NSObject load] may be used instead — it will be executed separately for classes and categories.

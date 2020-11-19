@@ -29,4 +29,4 @@ lazy val root = (project in file("."))
   )
 
 lazy val `doc-generator` = project
-  .settings(libraryDependencies ++= Seq(codacyEngineScalaSeed, betterFiles))
+  .settings(libraryDependencies ++= Seq(codacyEngineScalaSeed, betterFiles, "net.ruippeixotog" %% "scala-scraper" % "2.2.0"))

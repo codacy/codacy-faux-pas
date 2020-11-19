@@ -1,0 +1,1 @@
+Warns if assertion macro bodies contain invocations of non-getter methods or functions. Assertions should not have side effects because they are normally disabled in release builds — the program’s behavior should not be dependent on whether assertions are enabled or not. This rule considers only Foundation assertion macros.

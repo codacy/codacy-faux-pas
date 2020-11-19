@@ -1,0 +1,1 @@
+Warns when a XIB specifies user-defined runtime attributes that don’t match the source code of the associated class. A key path that doesn’t match any of the class properties or setter methods yields a diagnostic, as does a mismatch in the type of the assigned value and the value type declared for the property or setter.

@@ -1,0 +1,1 @@
+Resources loaded from disk at runtime should be included in the bundle resources under the correct path. Remember that unlike most Macs (and thus iOS simulators run on those Macs), iOS devices have a case sensitive filesystem.
