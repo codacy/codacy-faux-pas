@@ -3,19 +3,22 @@ package com.codacy.fauxpas
 import com.codacy.analysis.core.model.{IssuesAnalysis, ToolResults}
 import com.codacy.analysis.core.model.IssuesAnalysis.FileResults
 import com.codacy.analysis.core.serializer.IssuesReportSerializer
-import java.nio.file.Path
+import java.nio.file.{Path, Paths}
 
-class Converter(toolName: String) {
+class Converter(toolName: String, reportParser: FauxPasReportParser) {
 
   def convert(lines: Seq[String], relativizeTo: Path): String = {
-    val parsed = FauxPasReportParser.parse(lines, relativizeTo)
+    val parsed = reportParser.parse(lines)
 
     val grouped = parsed
-      .groupBy(_.path)
+      .groupBy(_.file)
       .view
-      .map {
-        case (path, res) =>
-          FileResults(path, res.view.map(FauxPasResult.toIssue).to(Set))
+      .collect {
+        case (Some(path), res) => //only get issues associated with a file
+          FileResults(
+            relativizeTo.relativize(Paths.get(path)),
+            res.view.flatMap(FauxPasResult.toIssue(_, relativizeTo)).to(Set)
+          )
       }
       .to(Set)
 

@@ -83,6 +83,17 @@ curl -XPOST -L -H "project-token: $PROJECT_TOKEN" \
 
 * * *
 
+## Command line flags
+
+`codacy-faux-pas` accepts as command line arguments:
+
+-   `--encoding <ENCODING>` or `-e <ENCODING>` - encoding to use when parsing the input (default: `UTF-8`). The encoding should be one of the possible [Java Charsets](https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html#java.nio.charset.Charset).
+    Example: 
+
+    ```bash
+    ./codacy-faux-pas-"<version>" --encoding LATIN1
+    ```
+
 ## Building
 
 ##### Compile

@@ -9,7 +9,7 @@ object Main {
     val stdin = scala.io.Source.fromInputStream(System.in)(config.encoding)
     val lines = stdin.getLines().to(LazyList)
     val pwd = Paths.get(System.getProperty("user.dir"))
-    val jsonString = new Converter(toolName).convert(lines, relativizeTo = pwd)
+    val jsonString = new Converter(toolName, new FauxPasReportParser).convert(lines, relativizeTo = pwd)
     println(jsonString)
   }
 
