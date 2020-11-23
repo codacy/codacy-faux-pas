@@ -10,7 +10,7 @@ import io.circe.generic.semiauto.deriveDecoder
 case class FauxPasResult(
     extent: FauxPasResult.Extent,
     file: Option[String],
-    info: String,
+    info: Option[String],
     ruleShortName: String,
     severity: Int
 )
@@ -39,7 +39,7 @@ object FauxPasResult {
         Issue(
           results.Pattern.Id(withPrefix(result.ruleShortName)),
           relativizeTo.relativize(Paths.get(file)),
-          Issue.Message(result.info),
+          Issue.Message(result.info.getOrElse("")),
           FauxPasResult.convertLevel(result.severity),
           FauxPasResult.convertCategory(result.ruleShortName),
           FullLocation(result.extent.start.line, result.extent.start.utf16Column)
