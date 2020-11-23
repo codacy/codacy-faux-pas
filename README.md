@@ -45,7 +45,7 @@ export COMMIT="COMMIT-UUID"
 # 1. Run Faux Pas
 fauxpas -o json check <PATH_TO_REPO> | \
 # 2. Convert the Faux Pas output to a format that the Codacy API accepts
-./codacy-feaux-pas-"<version>" | \
+./codacy-faux-pas-"<version>" | \
 # 3. Send the results to Codacy
 curl -XPOST -L -H "project-token: $PROJECT_TOKEN" \
     -H "Content-type: application/json" -d @- \
