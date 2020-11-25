@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2595c726b7d54ac1866cc65849fcafee)](https://app.codacy.com/gh/codacy/codacy-faux-pas?utm_source=github.com&utm_medium=referral&utm_content=codacy/codacy-faux-pas&utm_campaign=Badge_Grade_Settings)
+
 # codacy-faux-pas
 
 A standalone tool that converts [Faux Pas](http://fauxpasapp.com/)
