@@ -11,14 +11,18 @@ class ConverterSpecs extends AnyWordSpec with Matchers {
     FauxPasResult(
       FauxPasResult.Extent(FauxPasResult.Extent.Data(0, 0), FauxPasResult.Extent.Data(0, 0)),
       Some("/path/to/somewhere/where/an/issue/is/present"),
-      "Required compiler argument -DNDEBUG is not used. This argument disables the C standard library assertion macro (as defined in assert.h).",
+      Some(
+        "Required compiler argument -DNDEBUG is not used. This argument disables the C standard library assertion macro (as defined in assert.h)."
+      ),
       "ReleaseBuildCompilerArgs",
       9
     ),
     FauxPasResult(
       FauxPasResult.Extent(FauxPasResult.Extent.Data(0, 0), FauxPasResult.Extent.Data(0, 0)),
       Some("/path/to/somewhere/where/an/issue/is/present"),
-      "Required compiler argument -DNS_BLOCK_ASSERTIONS is not used. This argument disables Foundation assertion macros.",
+      Some(
+        "Required compiler argument -DNS_BLOCK_ASSERTIONS is not used. This argument disables Foundation assertion macros."
+      ),
       "ReleaseBuildCompilerArgs",
       9
     )
