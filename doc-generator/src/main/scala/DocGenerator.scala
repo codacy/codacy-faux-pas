@@ -55,14 +55,14 @@ object Generator {
 
   private def patternCategoryFromRule(rule: Rule) = {
     rule.category.value match {
-      case "BestPractice" => Pattern.Category.BestPractice
+      case "BestPractice" => Pattern.Category.CodeStyle
       case "Resources" => Pattern.Category.ErrorProne
       case "Config" => Pattern.Category.ErrorProne
-      case "Localization" => Pattern.Category.BestPractice
+      case "Localization" => Pattern.Category.ErrorProne
       case "APIUsage" => Pattern.Category.ErrorProne
       case "VCS" => Pattern.Category.ErrorProne
       case "Style" => Pattern.Category.CodeStyle
-      case "Pedantic" => Pattern.Category.BestPractice
+      case "Pedantic" => Pattern.Category.CodeStyle
       case "Miscellaneous" => Pattern.Category.ErrorProne
     }
   }

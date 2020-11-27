@@ -18,28 +18,28 @@
   }, {
     "patternId" : "ArgumentModification",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "AssertionSideEffects",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "AssigningDelegate",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "AssociatedObjectOnValueType",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -95,42 +95,42 @@
   }, {
     "patternId" : "CompleteNotificationCenterDetachment",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "ConstructorReturnType",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "CopyingMutableProperty",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "CyclomaticComplexity",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "DefaultInExhaustiveSwitch",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "DiscardedOpaqueNotificationObserver",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -151,7 +151,7 @@
   }, {
     "patternId" : "DuplicateTranslation",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -165,14 +165,14 @@
   }, {
     "patternId" : "ErrorConditionCheck",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "FastEnumElementOutside",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -214,21 +214,21 @@
   }, {
     "patternId" : "HardcodedSelfClass",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "HardcodedUIString",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "IBOutletsInPublicInterface",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -242,7 +242,7 @@
   }, {
     "patternId" : "ImplicitAtomicProperty",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -256,28 +256,28 @@
   }, {
     "patternId" : "InitializeMethodCategoryOverride",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "InitializeSuperInvocation",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "InstanceMethodWritesToStaticVariable",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "InvalidStringsFile",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -298,14 +298,14 @@
   }, {
     "patternId" : "LoadMethodWithoutAutoreleasePool",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "MacroBasedIncludeGuard",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -319,14 +319,14 @@
   }, {
     "patternId" : "MallocCast",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "MallocWithoutSizeof",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -361,14 +361,14 @@
   }, {
     "patternId" : "MissingTranslation",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "NSLogUsed",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -396,7 +396,7 @@
   }, {
     "patternId" : "OldVerboseObjCSyntax",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -417,14 +417,14 @@
   }, {
     "patternId" : "PrefixHeaderIncludeSuggestion",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "PrivateCategory",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -438,7 +438,7 @@
   }, {
     "patternId" : "RedundantInclude",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -459,14 +459,14 @@
   }, {
     "patternId" : "ReservedIdentifierNaming",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "ReservedPrefix",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -487,7 +487,7 @@
   }, {
     "patternId" : "RetainingImmutableProperty",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -501,7 +501,7 @@
   }, {
     "patternId" : "SetterInvocationInInitOrDealloc",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -529,14 +529,14 @@
   }, {
     "patternId" : "StringsdictWithoutStrings",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "StrongDelegate",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -571,14 +571,14 @@
   }, {
     "patternId" : "Swizzling",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "TerminatingApp",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -599,14 +599,14 @@
   }, {
     "patternId" : "TranslationFormatMismatch",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "TranslationPunctuation",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -620,21 +620,21 @@
   }, {
     "patternId" : "UncommentedLocalizedString",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "UndetachedDelegate",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "UnidiomaticAccessorNaming",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -669,14 +669,14 @@
   }, {
     "patternId" : "UnnecessaryNullCheck",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "UnprefixedCategoryMethod",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -697,14 +697,14 @@
   }, {
     "patternId" : "UnusedErrorValue",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "UnusedMethod",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -718,21 +718,21 @@
   }, {
     "patternId" : "UnusedTranslation",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "UsedVariableMarkedUnused",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
   }, {
     "patternId" : "ViewControllerInitWithNibName",
     "level" : "Info",
-    "category" : "BestPractice",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
