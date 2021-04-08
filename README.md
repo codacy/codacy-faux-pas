@@ -12,7 +12,7 @@ It allows running Faux Pas either locally or as part of your CI process and then
 To get your Faux Pas results into Codacy you'll need to:
 
 -   Enable the setting “Run analysis through build server” under your repository Settings > General > Repository analysis
--   Obtain a [Project API token](https://support.codacy.com/hc/en-us/articles/207994675-Project-API)
+-   Obtain a [project API token](https://docs.codacy.com/codacy-api/api-tokens/#project-api-tokens)
 -   Download [coday-faux-pas](https://github.com/codacy/codacy-faux-pas/releases)
 
 ### Sending the results to Codacy
