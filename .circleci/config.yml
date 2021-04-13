@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  codacy: codacy/base@2.9.3
+  codacy: codacy/base@5.2.2
   codacy_plugins_test: codacy/plugins-test@0.10.6
 
 workflows:
@@ -36,15 +36,26 @@ workflows:
           requires:
             - compile
       - codacy/sbt:
-          name: package_artifacts
+          name: package_artifacts_alpine
           persist_to_workspace: true
           cmd: |
-            sbt nativeImage
-            sbt "assembly"
+            sbt nativeImage assembly
 
             mkdir -p ~/workdir/artifacts/
             mv target/scala-2.13/codacy-faux-pas-assembly-$(cat .version).jar ~/workdir/artifacts/codacy-faux-pas-$(cat .version).jar
             mv target/native-image/codacy-faux-pas ~/workdir/artifacts/codacy-faux-pas-$(cat .version)
+          requires:
+            - check_fmt
+            - test_and_coverage
+      - codacy/sbt_osx:
+          name: package_artifacts_osx
+          cmd: |
+            sbt "set nativeImageOptions --= Seq(\"--static\"); nativeImage"
+
+            mkdir -p ~/workdir/artifacts/
+            mv $HOME/workdir/target/native-image/codacy-faux-pas $HOME/workdir/artifacts/codacy-faux-pas-darwin
+          persist_to_workspace: true
+          persist_to_workspace_path: "artifacts/codacy-faux-pas-darwin"
           requires:
             - check_fmt
             - test_and_coverage
@@ -55,7 +66,8 @@ workflows:
             docker save --output docker-image.tar $CIRCLE_PROJECT_REPONAME:latest
           persist_to_workspace: true
           requires:
-            - package_artifacts
+            - package_artifacts_alpine
+            - package_artifacts_osx
       - codacy_plugins_test/run:
           name: plugins_test
           run_pattern_tests: false
