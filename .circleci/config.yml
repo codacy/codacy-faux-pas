@@ -39,12 +39,12 @@ workflows:
           name: package_artifacts
           persist_to_workspace: true
           cmd: |
-            sbt "graalvm-native-image:packageBin"
+            sbt nativeImage
             sbt "assembly"
 
             mkdir -p ~/workdir/artifacts/
             mv target/scala-2.13/codacy-faux-pas-assembly-$(cat .version).jar ~/workdir/artifacts/codacy-faux-pas-$(cat .version).jar
-            mv target/graalvm-native-image/codacy-faux-pas ~/workdir/artifacts/codacy-faux-pas-$(cat .version)
+            mv target/native-image/codacy-faux-pas ~/workdir/artifacts/codacy-faux-pas-$(cat .version)
           requires:
             - check_fmt
             - test_and_coverage
