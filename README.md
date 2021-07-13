@@ -1,5 +1,7 @@
 # codacy-faux-pas
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c4eb42cf27614bc3b07fc940bd300e23)](https://app.codacy.com/gh/codacy/codacy-faux-pas?utm_source=github.com&utm_medium=referral&utm_content=codacy/codacy-faux-pas&utm_campaign=Badge_Grade_Settings)
+
 A standalone tool that converts [Faux Pas](http://fauxpasapp.com/)
 diagnostics to Codacy's format.
 
