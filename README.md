@@ -11,7 +11,8 @@ It allows running Faux Pas either locally or as part of your CI process and then
 
 To get your Faux Pas results into Codacy you'll need to:
 
--   Enable the setting “Run analysis through build server” under your repository Settings > General > Repository analysis
+-   Enable Faux Pas on your repository **Code patterns** page
+-   Enable the setting **Run analysis through build server** on your repository **Settings**, tab **General**, **Repository analysis**
 -   Obtain a [project API token](https://docs.codacy.com/codacy-api/api-tokens/#project-api-tokens)
 -   Download [coday-faux-pas](https://github.com/codacy/codacy-faux-pas/releases)
 
