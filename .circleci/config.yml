@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  codacy: codacy/base@9.1.2
+  codacy: codacy/base@10.1.0
   codacy_plugins_test: codacy/plugins-test@1.1.1
 
 workflows:
@@ -85,6 +85,17 @@ workflows:
       - codacy/publish_ghr:
           name: publish_ghr
           path: ~/workdir/artifacts/
+          filters:
+            branches:
+              only:
+                - master
+          context: CodacyGitHub
+          requires:
+            - plugins_test
+      - codacy/publish_s3:
+          name: publish_s3
+          path: bin/codacy-faux-pas
+          files: artifacts/codacy-faux-pas-darwin artifacts/codacy-faux-pas-$(cat .version) artifacts/codacy-faux-pas-$(cat .version).jar
           filters:
             branches:
               only:
