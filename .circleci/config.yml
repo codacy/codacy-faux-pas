@@ -92,3 +92,14 @@ workflows:
           context: CodacyGitHub
           requires:
             - plugins_test
+      - codacy/publish_s3:
+          name: publish_s3
+          path: bin/codacy-faux-pas
+          files: artifacts/codacy-faux-pas-darwin
+          filters:
+            branches:
+              only:
+                - master
+          context: CodacyGitHub
+          requires:
+            - plugins_test
